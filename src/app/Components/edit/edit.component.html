@@ -1,0 +1,78 @@
+<div class="container text-center">
+    <h2 class="mb-4">EDIT</h2>
+    <form [formGroup]="editForm" novalidate class="form">
+        <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Name:</label>
+            <input id="recipient-name" type="text" class="form-control form-control-sm rounded custom-input" name="Name"
+                formControlName="Name" />
+        </div>
+        <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Username:</label>
+            <input id="recipient-name" type="text" class="form-control form-control-sm rounded custom-input"
+                name="Username" formControlName="Username" />
+        </div>
+        <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Email:</label>
+            <input id="recipient-name" type="text" class="form-control form-control-sm rounded custom-input"
+                name="Email" formControlName="Email" />
+        </div>
+        <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Street:</label>
+            <input id="recipient-name" type="text" class="form-control form-control-sm rounded custom-input"
+                name="Street" formControlName="Street" />
+        </div>
+        <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Suite:</label>
+            <input id="recipient-name" type="text" class="form-control form-control-sm rounded custom-input"
+                name="Suite" formControlName="Suite" />
+        </div>
+        <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">City:</label>
+            <input id="recipient-name" type="text" class="form-control form-control-sm rounded custom-input" name="City"
+                formControlName="City" />
+        </div>
+        <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">ZipCode:</label>
+            <input id="recipient-name" type="text" class="form-control form-control-sm rounded custom-input"
+                name="Zipcode" formControlName="Zipcode" />
+        </div>
+        <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Lat:</label>
+            <input id="recipient-name" type="text" class="form-control form-control-sm rounded custom-input" name="Lat"
+                formControlName="Lat" />
+        </div>
+        <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Lng:</label>
+            <input id="recipient-name" type="text" class="form-control form-control-sm rounded custom-input" name="Lng"
+                formControlName="Lng" />
+        </div>
+        <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Phone:</label>
+            <input id="recipient-name" type="text" class="form-control form-control-sm rounded custom-input"
+                name="Phone" formControlName="Phone" />
+        </div>
+        <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Website:</label>
+            <input id="recipient-name" type="text" class="form-control form-control-sm rounded custom-input"
+                name="Website" formControlName="Website" />
+        </div>
+        <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Company Name:</label>
+            <input id="recipient-name" type="text" class="form-control form-control-sm rounded custom-input"
+                name="CompanyName" formControlName="CompanyName" />
+        </div>
+        <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Company CatchPhrase:</label>
+            <input id="recipient-name" type="text" class="form-control form-control-sm rounded custom-input"
+                name="CompanyCatchPhrase" formControlName="CompanyCatchPhrase" />
+        </div>
+        <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Company Bs:</label>
+            <input id="recipient-name" type="text" class="form-control form-control-sm rounded custom-input"
+                name="CompanyBs" formControlName="CompanyBs" />
+        </div>
+        <div>
+            <button type="button" class="btn btn-success" (click)="Edit()"><i class="fas fa-edit"></i>&nbsp;&nbsp;Edit&nbsp;&nbsp;</button>
+        </div>
+    </form>
+</div>
