@@ -10,7 +10,7 @@ import { HeaderComponent } from './Components/header/header.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { UserComponent } from './components/user/user.component';
+import { UsersComponent } from './Components/users/users.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +19,7 @@ import { UserComponent } from './components/user/user.component';
     CreateComponent,
     EditComponent,
     HeaderComponent,
-    UserComponent
+    UsersComponent
   ],
   imports: [
     BrowserModule,

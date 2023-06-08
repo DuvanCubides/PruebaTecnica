@@ -3,11 +3,11 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { ConexionService } from 'src/app/conexion.service';
 
 @Component({
-  selector: 'app-user',
-  templateUrl: './user.component.html',
-  styleUrls: ['./user.component.css']
+  selector: 'app-users',
+  templateUrl: './users.component.html',
+  styleUrls: ['./users.component.css']
 })
-export class UserComponent {
+export class UsersComponent {
   userData: any;
   userId: any;
   constructor( private con: ConexionService, private router: Router, private route: ActivatedRoute){
