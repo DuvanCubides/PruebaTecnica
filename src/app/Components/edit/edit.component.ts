@@ -83,4 +83,7 @@ export class EditComponent {
       this.router.navigate(['Main'])
     });
   }
+  Cancel(){
+    this.router.navigate(['Main']);
+  }
 }

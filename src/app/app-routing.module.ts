@@ -3,11 +3,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { CreateComponent } from './Components/create/create.component';
 import { EditComponent } from './Components/edit/edit.component';
 import { MainComponent } from './Components/main/main.component';
+import { UserComponent } from './components/user/user.component';
 
 const routes: Routes = [
   {path: '', pathMatch:'full',redirectTo:'Main'},
   {path: 'Create', component: CreateComponent},
   {path: 'Edit/:id', component: EditComponent},
+  {path: 'User/:id', component: UserComponent},
   {path: 'Main', component: MainComponent},
 ];
 

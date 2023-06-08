@@ -25,6 +25,9 @@ export class MainComponent {
   Edit(EditId:any){
     this.router.navigate(['/Edit',EditId]);
   }
+  View(ViewId:any){
+    this.router.navigate(['/User',ViewId]);
+  }
   Delete(UserId:any){
     this.con.Delete(UserId).subscribe((data:any)=>{
       console.log(data);

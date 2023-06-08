@@ -56,5 +56,8 @@ export class CreateComponent {
       this.router.navigate(['Main'])
     });
   }
+  Cancel(){
+    this.router.navigate(['Main']);
+  }
   
 }

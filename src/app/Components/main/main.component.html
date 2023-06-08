@@ -7,17 +7,6 @@
                     <th scope="col"><i class="fas fa-user"></i>Name</th>
                     <th scope="col"><i class="fas fa-user-circle"></i>Username</th>
                     <th scope="col"><i class="fas fa-envelope"></i>Email</th>
-                    <th scope="col"><i class="fas fa-road"></i>Street</th>
-                    <th scope="col"><i class="fas fa-building"></i>Suite</th>
-                    <th scope="col"><i class="fas fa-city"></i>City</th>
-                    <th scope="col"><i class="fas fa-map-marker-alt"></i>ZipCode</th>
-                    <th scope="col"><i class="fas fa-map-pin"></i>Lat</th>
-                    <th scope="col"><i class="fas fa-map-pin"></i>Lng</th>
-                    <th scope="col"><i class="fas fa-phone"></i>Phone</th>
-                    <th scope="col"><i class="fas fa-globe"></i>Website</th>
-                    <th scope="col"><i class="fas fa-building"></i>Company Name</th>
-                    <th scope="col"><i class="fas fa-quote-left"></i>Company BatchPhrase</th>
-                    <th scope="col"><i class="fas fa-briefcase"></i>Company Bs</th>
                     <th scope="col"><i class="fas fa-cogs"></i>Accion</th>
                 </tr>
             </thead>
@@ -27,22 +16,19 @@
                     <td>{{User.name}}</td>
                     <td>{{User.username}}</td>
                     <td>{{User.email}}</td>
-                    <td>{{User.address.street}}</td>
-                    <td>{{User.address.suite}}</td>
-                    <td>{{User.address.city}}</td>
-                    <td>{{User.address.zipCode}}</td>
-                    <td>{{User.address.geo.lat}}</td>
-                    <td>{{User.address.geo.lng}}</td>
-                    <td>{{User.phone}}</td>
-                    <td>{{User.website}}</td>
-                    <td>{{User.company.name}}</td>
-                    <td>{{User.company.catchPhrase}}</td>
-                    <td>{{User.company.bs}}</td>
                     <td>
-                        <button type="button" class="btn btn-primary btn-rounded"
+                        <div class="mb-2">
+                        <button type="button" class="btn btn-success btn-rounded mr-2"
+                            (click)="View(User.id)"><i class="fas fa-eye"></i>&nbsp;&nbsp;View&nbsp;</button>
+                        </div>
+                        <div class="mb-2">
+                        <button type="button" class="btn btn-primary btn-rounded mr-2"
                             (click)="Edit(User.id)"><i class="fas fa-edit"></i>&nbsp;&nbsp;Edit&nbsp;</button>
-                        <button type="button" class="btn btn-danger btn-rounded"
+                        </div>
+                        <div class="mb-2">
+                        <button type="button" class="btn btn-danger btn-rounded mr-2"
                             (click)="Delete(User.id)"> <i class="fas fa-trash-alt"></i>&nbsp;&nbsp;Delete&nbsp;</button>
+                        </div>
                     </td>
                 </tr>
             </tbody>

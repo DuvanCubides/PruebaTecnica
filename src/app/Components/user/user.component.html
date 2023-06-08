@@ -1,0 +1,38 @@
+<div class="container text-center">
+    <h2 class="mb-4">USER</h2>
+        <div class="mb-3">
+            <label class="col-form-label"><i class="fas fa-id-card"></i>Id:</label>
+            <p class="border rounded custom">{{userData.id}}</p>
+            <label class="col-form-label"><i class="fas fa-user"></i>Name:</label>
+            <p class="border rounded custom">{{userData.name}}</p>
+            <label class="col-form-label"><i class="fas fa-user-circle"></i>Username:</label>
+            <p class="border rounded custom">{{userData.username}}</p>
+            <label class="col-form-label"><i class="fas fa-envelope"></i>Email:</label>
+            <p class="border rounded custom">{{userData.email}}</p>
+            <label class="col-form-label"><i class="fas fa-road"></i>Street:</label>
+            <p class="border rounded custom">{{userData.address.street}}</p>
+            <label class="col-form-label"><i class="fas fa-building"></i>Suite:</label>
+            <p class="border rounded custom">{{userData.address.suite}}</p>
+            <label class="col-form-label"><i class="fas fa-city"></i>City:</label>
+            <p class="border rounded custom">{{userData.address.city}}</p>
+            <label class="col-form-label"><i class="fas fa-map-marker-alt"></i>zipcode:</label>
+            <p class="border rounded custom">{{userData.address.zipcode}}</p>
+            <label class="col-form-label"><i class="fas fa-map-pin"></i>Lat:</label>
+            <p class="border rounded custom">{{userData.address.geo.lat}}</p>
+            <label class="col-form-label"><i class="fas fa-map-pin"></i>Lng:</label>
+            <p class="border rounded custom">{{userData.address.geo.lng}}</p>
+            <label class="col-form-label"><i class="fas fa-phone"></i>Phone:</label>
+            <p class="border rounded custom">{{userData.phone}}</p>
+            <label class="col-form-label"><i class="fas fa-globe"></i>Website:</label>
+            <p class="border rounded custom">{{userData.website}}</p>
+            <label class="col-form-label"><i class="fas fa-building"></i>Company Name:</label>
+            <p class="border rounded custom">{{userData.company.name}}</p>
+            <label class="col-form-label"><i class="fas fa-quote-left"></i>Company CatchPhrase:</label>
+            <p class="border rounded custom">{{userData.company.catchPhrase}}</p>
+            <label class="col-form-label"><i class="fas fa-briefcase"></i>Company Bs:</label>
+            <p class="border rounded custom">{{userData.company.bs}}</p>
+        </div>
+        <div>
+            <button type="button" class="btn btn-primary" (click)="Return()"><i class="fas fa-arrow-left"></i>&nbsp;&nbsp;Atras&nbsp;&nbsp;</button>
+        </div>
+</div>
